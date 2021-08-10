@@ -1,94 +1,171 @@
-function oneThroughTwenty() {
-    
-   /* Your code goes below
-   Write a for or a while loop
-   return the result*/
-    
-}
+//Loop de 1 a 20
 
-//call function oneThroughTwenty
+function oneThroughTwenty() {
+  
+  let array = [];
+  let counter = 0;
+  for (let i=1; i<=20; i++) {
+      array[counter]=i;
+     counter ++;
+  }
+  return array;
+}
+ 
+console.log(oneThroughTwenty())
+
+//_____________________________________________________________
+//Loop numeros pares de 1 a 20
 
 function evensToTwenty() {
-    
-   /* Your code goes below
-   Write a for or a while loop
-   return the result */
+
+  let array = [];
+  let counter = 0;
+  for (let i=1; i<=20; i++) {
+    if(i % 2 === 0) {  
+    array[counter]=i;
+     counter ++;
+  }
+}
+  return array;
+}
   
+console.log(evensToTwenty())
+
+//__________________________________________________________________
+//Lool numeros Impares de 1 a 20
+  
+function numerosImpares() {
+ 
+  let array = [];
+  let counter = 0;
+  for (let i=1; i<=20; i++) {
+    if(i % 2 !== 0) {  
+    array[counter]=i;
+     counter ++;
+  }
 }
-
-//call function evensToTwenty
-
-function oddsToTwenty() {
-    
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
-   
+  return array;
 }
+ 
+console.log(numerosImpares())
 
-//call function oddsToTwenty
+//_____________________________________________________________________
+//Loop numeros multiplos de 5 
 
 function multiplesOfFive() {
-    
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
-
+   
+  let array = [];
+  let counter = 0;
+  for (let i=1; i<=100; i++) {
+    if(i % 5 === 0) {  
+    array[counter]=i;
+     counter ++;
+  }
+}
+  return array;
 }
 
-//call function multiplesOfFive
+console.log(multiplesOfFive())
 
-function squareNumbers() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
-    
-}
+//__________________________________________________________
+//quadrados perfeitos
+ function quadradosperfeitos() {
 
-//call function squareNumbers
-
+  let array = [];
+  let counter = 0;
+  for (let i=1; i<=100; i++) {
+    let quadrado = i * i;
+    if(quadrado<=100) {
+       array[counter] = quadrado;
+       counter++; 
+    }
+  }
+  return array;
+ }
+ console.log(quadradosperfeitos())
+//_____________________________________________________________
+ // contagem de 20 a 1
 function countingBackwards() {
-    
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
-}
 
-//call function countingBackwards
+  
+  
+    let array = [];
+    let counter = 0;
+    for (let i=20; i>=1; i--) {
+        array[counter]=i;
+       counter ++;
+    }
+    return array;
+  }
+ 
+console.log(countingBackwards())
+
+//_______________________________________________________________
+//numeros pares de 20 a 1
 
 function evenNumbersBackwards() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+   
+  let array = [];
+  let counter = 0;
+  for (let i=20; i>=1; i--) {
+    if(i % 2 === 0) {  
+    array[counter]=i;
+     counter ++;
+  }
+}
+  return array;
 }
 
-//call function evenNumbersBackwards
+console.log(evenNumbersBackwards())
 
-function oddNumbersBackwards() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+//___________________________________________________________________
+//numeros impares de traz pra frente
+
+ function imparesregressiva() {
+
+  let array = [];
+  let counter = 0;
+  for (let i=20; i>=1; i--) {
+    if(i % 2 !== 0) {  
+    array[counter]=i;
+     counter ++;
+  }
 }
-
-//call function oddNumbersBackwards
+  return array;
+}
+ 
+console.log(imparesregressiva())
+//_____________________________________________________________________
+//multiplos de 5 de traz pra frente
 
 function multiplesOfFiveBackwards() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+   
+  let array = [];
+  let counter = 0;
+  for (let i=100; i>=1; i--) {
+    if(i % 5 === 0) {  
+    array[counter]=i;
+     counter ++;
+  }
+}
+  return array;
 }
 
-//call function multiplesOfFiveBackwards
+console.log(multiplesOfFiveBackwards()) 
+//____________________________________________________________________
+//quadrados perfeitos de traz pra frente
+  
+function quadradosregresiva() {
 
-function squareNumbersBackwards() {
-    
-   /* Your code goes below
-  Write a for or a while loop
-  return the result */
-}
-
-//call function squareNumbersBackwards
+  let array = [];
+  let counter = 0;
+  for (let i=100; i>=1; i--) {
+    let quadrado = i * i;
+    if(quadrado<=100) {
+       array[counter] = quadrado;
+       counter++; 
+    }
+  }
+  return array;
+ }
+ console.log(quadradosregresiva())
